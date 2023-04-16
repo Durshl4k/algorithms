@@ -8,3 +8,14 @@ describe("pow", function() {
     });
 
 });
+
+
+describe("fib", function() {
+
+    it("возводит в степень n", function() {
+        assert.equal(fib(4), 3);
+        assert.equal(fib(7), 13);
+        assert.equal(fib(77), 5527939700884757);
+    });
+
+});
