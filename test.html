@@ -30,6 +30,7 @@
     return result;
   }
 
+
   function fib (n) {
     let f0 = 1;
     let f1 = 1;
@@ -42,6 +43,19 @@
     };
 
     return f2;
+  }
+
+
+  function find(name, array) {
+      let result = 0;
+
+      for (let i = 0; i < array.length; i++){
+        if (array[i] == name){
+          result = i;
+        };
+      };
+
+      return result;
   }
 </script>
 

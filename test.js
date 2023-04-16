@@ -12,10 +12,22 @@ describe("pow", function() {
 
 describe("fib", function() {
 
-    it("возводит в степень n", function() {
+    it("числа Фибоначчи", function() {
         assert.equal(fib(4), 3);
         assert.equal(fib(7), 13);
         assert.equal(fib(77), 5527939700884757);
+    });
+
+});
+
+
+describe("find", function() {
+
+    it("имена из списка", function() {
+        let array = ['Вадик', 'Владислав', 'Ялик']
+        assert.equal(find('Вадик', array), 0);
+        assert.equal(find('Владислав', array), 1);
+        assert.equal(find('Ялик', array), 2);
     });
 
 });
