@@ -31,3 +31,28 @@ describe("find", function() {
     });
 
 });
+
+
+
+
+
+describe("quadratic_equation", function() {
+
+    it("квадратные уравнения", function() {
+        assert.equal(quadratic_equation(2, 6, 0), 0, -3);
+        assert.equal(quadratic_equation(1, 4, 4), null, -2);
+        assert.equal(quadratic_equation(13, -5, 1), null, null);
+    });
+
+});
+
+
+describe("module", function() {
+
+    it("модуль числа", function() {
+        assert.equal(module(-123), 123);
+        assert.equal(module(0), 0);
+        assert.equal(module(98), 98);
+    });
+
+});
