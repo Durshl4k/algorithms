@@ -148,6 +148,42 @@
 }
 
 
+function reverseString(str) {
+    let reverse = ""
+
+    for (i = str.length - 1; i >= 0; i--) {
+        reverse += str[i];
+    }
+    return reverse;
+}
+
+
+function findMinMax(x){
+  let result = []
+  let maxEl = ""
+
+  for (i = 0; i < x.length; i++){
+    if (x[i] > maxEl){
+      maxEl = x[i]
+    }
+  }
+  let minEl = maxEl
+
+  for (i = 0; i < x.length; i++){
+    if (x[i] < minEl){
+      minEl = x[i]
+    }
+  }
+
+  result.push(minEl)
+  result.push(maxEl)
+  return result
+}
+
+
+// function recursiveBinarySearch(){
+  
+// }
 
 </script>
 

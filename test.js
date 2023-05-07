@@ -101,13 +101,41 @@ describe("palindrom", function() {
 describe("iter_bin_search", function() {
 
     it("итерационный бинарный поиск", function() {
-        let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
-        assert.equal(iter_bin_search(array, 8), 8);
+        let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        assert.equal(iter_bin_search(array, 2), 1);
         let array2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
         assert.equal(iter_bin_search(array2, 8), 8);
-            
-
-
-
     });
 });
+
+
+describe("reverseString", function() {
+    it("вывод строки с последнего элемента", function() {
+        let arr1 = [1, 2, 3, 4, 5, 6, 7];
+        let answer1 = [7, 6, 5, 4, 3, 2, 1];
+        assert.equal(reverseString(arr1.toString()), answer1.toString());
+
+        let arr2 = "kate";
+        let answer2 = "etak";
+        assert.equal(reverseString(arr2), answer2);
+    });
+});
+
+
+describe("findMinMax", function() {
+    it("нахождение минимума и максимума", function() {
+        let arr1 = [1, 2, 3, 4, 5, 6, 7];
+        assert.equal(findMinMax(arr1).toString(), [1,7].toString());
+
+        let arr2 = ["b", "c", "d", "g", "e", "k", "w"];
+        assert.equal(findMinMax(arr2).toString(), ["b","w"].toString());
+    });
+});
+
+//==============================================
+// describe("recursiveBinarySearch", function() {
+//     it("рекурсивный бинарный поиск", function() {
+//         let array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+//         assert.equal(recursiveBinarySearch(array, 7), 6);
+//     });
+// }); 
