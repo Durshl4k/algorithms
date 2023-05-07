@@ -33,9 +33,6 @@ describe("find", function() {
 });
 
 
-
-
-
 describe("quadratic_equation", function() {
 
     it("квадратные уравнения", function() {
@@ -55,4 +52,62 @@ describe("module", function() {
         assert.equal(module(98), 98);
     });
 
+});
+
+
+describe("point_logic", function() {
+
+    it("находится ли число в диапазоне", function() {
+        assert.equal(point_logic(3,9,7), true);
+        assert.equal(point_logic(3,9,11), false);
+        assert.equal(point_logic(1,100,34), true);
+    });
+
+});
+
+
+describe("swap", function() {
+
+    it("меняет числа местами в списке", function() {
+        let array = [1,2,3,4,5]
+        assert.equal(swap(array, 2, 3), '1,2,4,3,5');
+    });
+
+});
+
+
+describe("palindrom", function() {
+
+    it("проверяет является ли слово палиндромом", function() {
+        assert.equal(palindrom('дед'), true);
+        assert.equal(palindrom('тима'), false);
+        assert.equal(palindrom('12321'), true);
+
+    });
+
+});
+
+
+// describe("iter_bin_search", function() {
+
+//     it("итерационный бинарный поиск", function() {
+//         let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18]
+//         assert.equal(iter_bin_search(array, 11), 11);
+//     });
+
+// });
+
+
+describe("iter_bin_search", function() {
+
+    it("итерационный бинарный поиск", function() {
+        let array = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+        assert.equal(iter_bin_search(array, 8), 8);
+        let array2 = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
+        assert.equal(iter_bin_search(array2, 8), 8);
+            
+
+
+
+    });
 });
